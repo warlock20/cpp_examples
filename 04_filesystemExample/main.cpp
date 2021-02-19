@@ -22,10 +22,13 @@ int main() {
         std::string trimmedPath;
         std::vector<std::string> v_folders;
         std::string word = "";
+        bool found = false;
         for (auto x : path) {
             if (x == '/') {
-                if(word == tillFolder)
+                if(word == tillFolder){
+                    found = true;
                     break;
+                }
                 v_folders.push_back(word);
                 trimmedPath = trimmedPath + word;
                 trimmedPath = trimmedPath + '/';
@@ -33,6 +36,8 @@ int main() {
             } else
                 word = word + x;
         }
+        if (!found)
+            return path;
         return trimmedPath;
     };
     auto trimmedPath = pathUntilFolder(pathSting,"04_filesystemExample");
