@@ -1,6 +1,6 @@
 # cpp_examples
 
-This repo contains the tips and tricks share by different well-known programmers in C++ community.  
+This repo contains the tips and tricks shared by different well-known programmers in C++ community.  
 
 ## Programmers I follow
 
