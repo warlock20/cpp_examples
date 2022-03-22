@@ -8,8 +8,6 @@
 #include <iostream>
 #include <string>
 
-//#ifdef ENABLE_LOGGING
-
 using namespace LOG_COLOR;
 
 // only for internal usage
@@ -180,4 +178,3 @@ std::ostream* __attribute__((weak)) getLogStream (){
 	return &std::clog;
 }
 
-//#endif

@@ -46,26 +46,6 @@ namespace LOG_COLOR{
 				LOG(LOG_LEVEL_ERROR, "CRITICAL ERROR EXECTION STOPPED !");\
 				while(true); 									  		\
 			}while(false)
-#define ENABLE_LOGGING
-#ifndef ENABLE_LOGGING
-
-#define LOG_COMPONENT_DEFINE(name)
-
-// forward to ns3 logging
-#define LOG(t,msg)
-#define LOG_ERROR(msg)
-#define LOG_WARN(msg)
-#define LOG_DEBUG(msg)
-#define LOG_INFO(msg)
-#define LOG_LOGIC(msg)
-#define LOG_UNCOND(msg)
-
-#define LOG_FUNCTION_NOARGS()
-#define LOG_FUNCTION(parameters)
-#define	LogComponentEnable(arg1, arg2)
-
-#else
-
 
 /**
  *  \ingroup logging
@@ -287,7 +267,6 @@ public:
 };*/
 
 
-#endif // LOG_ENABLE
 
 
 #endif //INC_03_LOGGERMODULE_LOGGER_H
